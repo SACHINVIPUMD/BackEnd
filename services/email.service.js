@@ -4,8 +4,8 @@ const randomstring = require('randomstring');
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'mail@gmail.com',
-    pass: 'password',
+    user: 'samadhanmitra@gmail.com',
+    pass: 'Samadhanmitra@47',
   },
 });
 
@@ -25,7 +25,7 @@ function sendOTP(email) {
     otpStorage[email] = otp;
 
     const mailOptions = {
-      from: 'sandhanakrishnansakthivel@gmail.com',
+      from: 'samadhanmitra@gmail.com',
       to: email,
       subject: 'OTP Verification',
       text: `Your OTP to verify on SAMADHANMITRA is: ${otp}`,
